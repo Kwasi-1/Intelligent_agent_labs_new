@@ -1,0 +1,43 @@
+============================================================
+LAB 4: FIPA-ACL MESSAGE EXAMPLES
+============================================================
+
+============================================================
+FIPA-ACL INFORM MESSAGE
+============================================================
+Timestamp   : 2026-02-18 15:54:06
+From        : basicagent1@xmpp.jp
+To          : basicagent1@xmpp.jp
+Performative: INFORM
+Ontology    : disaster-response
+Language    : JSON
+Body        :
+{
+  "type": "Earthquake",
+  "location": "Zone C",
+  "severity": "Critical",
+  "casualties": 50,
+  "resources_needed": "Medical"
+}
+============================================================
+
+============================================================
+FIPA-ACL REQUEST MESSAGE
+============================================================
+Timestamp   : 2026-02-18 15:54:09
+From        : basicagent1@xmpp.jp
+To          : basicagent1@xmpp.jp
+Performative: REQUEST
+Ontology    : disaster-response
+Language    : JSON
+Body        :
+{
+  "request_type": "status_update",
+  "location": "Zone C",
+  "details_needed": [
+    "casualties",
+    "resource_availability",
+    "access_routes"
+  ]
+}
+============================================================

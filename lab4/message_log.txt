@@ -1,0 +1,39 @@
+============================================================
+LAB 4: AGENT COMMUNICATION MESSAGE LOG
+FIPA-ACL Message Exchange - Disaster Response System
+============================================================
+
+
+============================================================
+[2026-02-18 17:08:50] INCOMING MESSAGE
+============================================================
+From        : xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: UNKNOWN
+Content     : Hi, This is XMPP.JP Admin.
+We just launched new XMPP Web Clinent "inverse".
+https://www.xmpp.jp/client
+
+Please try it. Thanks.
+============================================================
+
+
+============================================================
+[2026-02-18 17:08:55] OUTGOING MESSAGE
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : Disaster: Fire | Location: Zone B | Severity: High | Casualties: 40
+============================================================
+
+
+============================================================
+[2026-02-18 17:08:55] INCOMING MESSAGE
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : {"timestamp": "2026-02-18 17:08:55", "type": "Fire", "location": "Zone B", "severity": "High", "casualties": 40, "resources_needed": "Shelter"}
+============================================================
+

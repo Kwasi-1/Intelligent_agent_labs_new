@@ -1,0 +1,64 @@
+============================================================
+LAB 4: MULTI-AGENT FIPA-ACL COMMUNICATION LOG
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:02.468] >>> SENSOR SENDS INFORM >>>
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : Flood | Zone C | Critical | 31 casualties | Needs: Rescue
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:02.468] <<< RESCUE RECEIVES MESSAGE <<<
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : {"timestamp": "2026-02-18 17:19:02", "type": "Flood", "location": "Zone C", "severity": "Critical", "casualties": 31, "resources_needed": "Rescue"}
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:08.468] >>> SENSOR SENDS INFORM >>>
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : Earthquake | Zone D | Low | 16 casualties | Needs: Rescue
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:08.468] <<< RESCUE RECEIVES MESSAGE <<<
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : {"timestamp": "2026-02-18 17:19:08", "type": "Earthquake", "location": "Zone D", "severity": "Low", "casualties": 16, "resources_needed": "Rescue"}
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:14.468] >>> SENSOR SENDS INFORM >>>
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : Storm | Zone C | Critical | 3 casualties | Needs: Medical
+============================================================
+
+
+============================================================
+[2026-02-18 17:19:14.468] <<< RESCUE RECEIVES MESSAGE <<<
+============================================================
+From        : kwasisensoragent1@xmpp.jp
+To          : kwasirescueagent1@xmpp.jp
+Performative: INFORM
+Content     : {"timestamp": "2026-02-18 17:19:14", "type": "Storm", "location": "Zone C", "severity": "Critical", "casualties": 3, "resources_needed": "Medical"}
+============================================================
+
