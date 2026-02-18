@@ -1,0 +1,310 @@
+============================================================
+EXECUTION TRACE — Lab 3: Goals, Events, and Reactive Behavior
+RescueAgent FSM — Disaster Response & Relief Coordination
+Date: 2026-02-12
+============================================================
+
+RescueAgent basicagent1@xmpp.jp initializing...
+RescueAgent FSM behaviour added.
+
+RescueAgent is running. Monitoring for disasters...
+
+============================================================
+[13:34:32] STATE: MONITORING
+============================================================
+  Temperature: 36°C
+  Wind Speed : 52 km/h
+  Visibility : Poor
+  Access     : Blocked
+
+  ** DISASTER EVENT DETECTED **
+     Type     : Flood
+     Location : Zone C
+     Severity : Low
+
+============================================================
+[13:34:32] STATE: ALERT_RECEIVED
+============================================================
+  Alert: Flood at Zone C
+  Severity: Low | Casualties: 49
+  Resources needed: Medical
+
+============================================================
+[13:34:33] STATE: ASSESSING
+============================================================
+  Evaluating severity of Flood at Zone C...
+  >> Severity 'Low' is low — logging and resuming monitoring.
+
+============================================================
+[13:34:34] STATE: MONITORING
+============================================================
+  Temperature: 39°C
+  Wind Speed : 30 km/h
+  Visibility : Clear
+  Access     : Restricted
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:34:37] STATE: MONITORING
+============================================================
+  Temperature: 18°C
+  Wind Speed : 89 km/h
+  Visibility : Poor
+  Access     : Restricted
+
+  ** DISASTER EVENT DETECTED **
+     Type     : Earthquake
+     Location : Zone D
+     Severity : Critical
+
+============================================================
+[13:34:37] STATE: ALERT_RECEIVED
+============================================================
+  Alert: Earthquake at Zone D
+  Severity: Critical | Casualties: 42
+  Resources needed: Food
+
+============================================================
+[13:34:38] STATE: ASSESSING
+============================================================
+  Evaluating severity of Earthquake at Zone D...
+  >> Severity 'Critical' requires dispatch.
+
+============================================================
+[13:34:39] STATE: DISPATCHING
+============================================================
+  Dispatching rescue team to Zone D...
+  Disaster type : Earthquake
+  Severity      : Critical
+  Resource type : Food
+  >> Rescue team deployed successfully.
+
+============================================================
+[13:34:41] STATE: RESPONDING
+============================================================
+  Rescue operation in progress at Zone D...
+  Addressing Earthquake — Severity: Critical
+  Attending to 42 estimated casualties.
+  >> Response complete. Returning to monitoring.
+
+============================================================
+[13:34:44] STATE: MONITORING
+============================================================
+  Temperature: 31°C
+  Wind Speed : 4 km/h
+  Visibility : Clear
+  Access     : Blocked
+
+  ** DISASTER EVENT DETECTED **
+     Type     : Earthquake
+     Location : Zone C
+     Severity : Critical
+
+============================================================
+[13:34:44] STATE: ALERT_RECEIVED
+============================================================
+  Alert: Earthquake at Zone C
+  Severity: Critical | Casualties: 29
+  Resources needed: Shelter
+
+============================================================
+[13:34:45] STATE: ASSESSING
+============================================================
+  Evaluating severity of Earthquake at Zone C...
+  >> Severity 'Critical' requires dispatch.
+
+============================================================
+[13:34:46] STATE: DISPATCHING
+============================================================
+  Dispatching rescue team to Zone C...
+  Disaster type : Earthquake
+  Severity      : Critical
+  Resource type : Shelter
+  >> Rescue team deployed successfully.
+
+============================================================
+[13:34:48] STATE: RESPONDING
+============================================================
+  Rescue operation in progress at Zone C...
+  Addressing Earthquake — Severity: Critical
+  Attending to 29 estimated casualties.
+  >> Response complete. Returning to monitoring.
+
+============================================================
+[13:34:51] STATE: MONITORING
+============================================================
+  Temperature: 29°C
+  Wind Speed : 73 km/h
+  Visibility : Poor
+  Access     : Blocked
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:34:54] STATE: MONITORING
+============================================================
+  Temperature: 26°C
+  Wind Speed : 53 km/h
+  Visibility : Poor
+  Access     : Restricted
+
+  ** DISASTER EVENT DETECTED **
+     Type     : Earthquake
+     Location : Zone D
+     Severity : Medium
+
+============================================================
+[13:34:54] STATE: ALERT_RECEIVED
+============================================================
+  Alert: Earthquake at Zone D
+  Severity: Medium | Casualties: 41
+  Resources needed: Shelter
+
+============================================================
+[13:34:55] STATE: ASSESSING
+============================================================
+  Evaluating severity of Earthquake at Zone D...
+  >> Severity 'Medium' requires dispatch.
+
+============================================================
+[13:34:56] STATE: DISPATCHING
+============================================================
+  Dispatching rescue team to Zone D...
+  Disaster type : Earthquake
+  Severity      : Medium
+  Resource type : Shelter
+  >> Rescue team deployed successfully.
+
+============================================================
+[13:34:58] STATE: RESPONDING
+============================================================
+  Rescue operation in progress at Zone D...
+  Addressing Earthquake — Severity: Medium
+  Attending to 41 estimated casualties.
+  >> Response complete. Returning to monitoring.
+
+============================================================
+[13:35:01] STATE: MONITORING
+============================================================
+  Temperature: 37°C
+  Wind Speed : 4 km/h
+  Visibility : Moderate
+  Access     : Restricted
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:35:04] STATE: MONITORING
+============================================================
+  Temperature: 29°C
+  Wind Speed : 79 km/h
+  Visibility : Moderate
+  Access     : Restricted
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:35:07] STATE: MONITORING
+============================================================
+  Temperature: 39°C
+  Wind Speed : 67 km/h
+  Visibility : Poor
+  Access     : Normal
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:35:10] STATE: MONITORING
+============================================================
+  Temperature: 18°C
+  Wind Speed : 0 km/h
+  Visibility : Clear
+  Access     : Restricted
+
+  [STATUS] All clear — no disaster detected.
+
+============================================================
+[13:35:13] STATE: MONITORING
+============================================================
+  Temperature: 26°C
+  Wind Speed : 5 km/h
+  Visibility : Moderate
+  Access     : Restricted
+
+  ** DISASTER EVENT DETECTED **
+     Type     : Earthquake
+     Location : Zone D
+     Severity : Critical
+
+============================================================
+[13:35:13] STATE: ALERT_RECEIVED
+============================================================
+  Alert: Earthquake at Zone D
+  Severity: Critical | Casualties: 12
+  Resources needed: Shelter
+
+============================================================
+[13:35:14] STATE: ASSESSING
+============================================================
+  Evaluating severity of Earthquake at Zone D...
+  >> Severity 'Critical' requires dispatch.
+
+============================================================
+[13:35:15] STATE: DISPATCHING
+============================================================
+  Dispatching rescue team to Zone D...
+  Disaster type : Earthquake
+  Severity      : Critical
+  Resource type : Shelter
+  >> Rescue team deployed successfully.
+
+============================================================
+EXECUTION TRACE SUMMARY
+============================================================
+Total events detected : 5
+Responses completed   : 3
+
+  Event 1:
+    Timestamp : 2026-02-12 13:34:32
+    Type      : Flood
+    Location  : Zone C
+    Severity  : Low
+    Casualties: 49
+    Resources : Medical
+
+  Event 2:
+    Timestamp : 2026-02-12 13:34:37
+    Type      : Earthquake
+    Location  : Zone D
+    Severity  : Critical
+    Casualties: 42
+    Resources : Food
+
+  Event 3:
+    Timestamp : 2026-02-12 13:34:44
+    Type      : Earthquake
+    Location  : Zone C
+    Severity  : Critical
+    Casualties: 29
+    Resources : Shelter
+
+  Event 4:
+    Timestamp : 2026-02-12 13:34:54
+    Type      : Earthquake
+    Location  : Zone D
+    Severity  : Medium
+    Casualties: 41
+    Resources : Shelter
+
+  Event 5:
+    Timestamp : 2026-02-12 13:35:13
+    Type      : Earthquake
+    Location  : Zone D
+    Severity  : Critical
+    Casualties: 12
+    Resources : Shelter
+============================================================
+
+RescueAgent stopped.
+Return code: 0
